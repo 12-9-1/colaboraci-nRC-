@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Css bootstrap Header */
+s
+header {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header a {
+  gap: 15px;
+  transition: 0.3s;
+}
+
+header a span {
+  color: #4652b9;
+  font-size: 26px;
+}
+
+header ul li {
+  font-size: 16px;
+}
+
+header a:hover {
+  transition: 0.3s;
+  transform: scale(1.07);
+}
+
+/*CSS Card animation*/
+
+.banner {
+  position: relative;
+  widows: 100%;
+  height: calc(90vh - 50px);
+  background-image: url(../images/pro-bra/v-mb1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.capa {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.50);
+}
+
+.contenido {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.contenido h1 {
+  color: white;
+  font-size: 70px;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contenido p {
+  color: #fff;
+  font-size: 16px;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.contenido a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 400px;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 4px 19px;
+  transition: 0.2s;
+  filter: blur(30);
+}
+
+.contenido a:hover {
+  background-color: rgb(17, 110, 222);
+  border-color: rgb(17, 110, 222);
+  transition: 0.2s;
+}
+
+.cubierta {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-anim {
+  height: 600px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+}
+
+.card {
+  width: 80px;
+  border-radius: .75rem;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 2rem;
+  margin: 0 10px;
+  display: flex;
+  border-width: 0;
+  transition: .6s cubic-bezier(.28,-0.03,0,.99);
+  box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+  background: #223;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.card > .row > .description {
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  height: 160px;
+  width: 520px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition-delay: .3s;
+  transition: all .3s ease;
+}
+
+.description:hover p, .description:hover h4 {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4));
+  color: #000;
+  border-radius: 1rem;
+  padding: 5px;
+}
+
+.description h4 {
+  /*padding-top: 15px;*/
+  text-transform: uppercase;
+}
+
+input {
+  display: none;
+}
+
+input:checked + label {
+  width: 600px;
+}
+
+input:checked + label .description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+  background-image: url('/images/pro-bra/pro-1.jpg');
+}
+.card[for="c2"] {
+  background-image: url('/images/pro-pierna/pro-32.jpg');
+}
+.card[for="c3"] {
+  background-image: url('/images/pro-bra/pro-5.jpg');
+}
+.card[for="c4"] {
+  background-image: url('/images/pro-pierna/pro-7.jpg');
+}
+.card[for="c5"] {
+  background-image: url('/images/pro-pierna/pro-22.jpg');
+}
+.card[for="c6"] {
+  background-image: url('/images/pro-bra/pro-4.jpg');
+}
+.card[for="c7"] {
+  background-image: url('/images/pro-bra/pro-17.jpg');
+}
+.card[for="c8"] {
+  background-image: url('/images/pro-bra/pro-28.jpg');
+}
+.card[for="c9"] {
+  background-image: url('/images/exo-n/exoesqueleto1.jpg');
+}
+.card[for="c10"] {
+  background-image: url('/images/pro-pierna/pro-36.jpg');
+}
+
+/*Seccion parrafo intro*/
+
+.titulo-parrafo h2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 50px;
+}
+
+.div-int {
+  display: flex;
+  gap: 25px;
+  margin: 5px 50px 15px 50px;
+}
+
+.div-int p {
+  font-size: 20px;
+}
+
+.div-int img {
+  width: 600px;
+}
+
+@media (max-width: 1080px) {
+  .div-int {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div-int {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+  }
+
+  .div-int img {
+    width: 450px;
+  }
+}
+
+/*Titulo de cards e intro*/
+
+.titulo2 {
+  text-align: center;
+  font-size: 35px;
+  padding: 50px;
+}
+
+.parr-intro {
+  text-align: justify;
+  font-size: 20px;
+  padding: 50px;
+}
+
+/*Seccion de cards*/
+
+.sec-inferior {
+  /*display: flex;
+  flex-wrap: wrap;
+  margin: 100px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin: 5px 50px 15px 50px;
+}
+
+.categoria {
+  transition: box-shadow 0.3s ease; 
+  background-color: #000814;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.articulo-enlace {
+  text-decoration: none;
+  color: #fefcfb;
+  text-decoration-color: #263f26;
+}
+
+.categoria:hover {
+  box-shadow: 0.4rem 0.3rem 0.4rem rgba(0, 0, 0, 0.3);
+}
+
+.categoria h2, .categoria p {
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+.categoria {
+  width: 600px;
+  margin: 1.5rem;
+}
+
+.ruleta {
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+
+.ruleta img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 8;
+  transition: .5s ease;
+}
+
+.ruleta img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 3;
+  filter: contrast(120%)
+}
+
+@media (max-width: 1080px) {
+  .titulo2 {
+    text-align: center;
+  }
+
+  .parr-intro {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/* CSS Footer */
+
+footer ul {
+  gap: 10px;
+}
+
+.facu {
+  color: black;
+  transition: 0.3;
+}
+
+.facu:hover {
+  background-color: #5583ec;
+  color: #fff;
+  padding: 2px 3px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.lia {
+  color: black;
+  transition: 0.3;
+}
+
+.lia:hover {
+  background-color: #eb72ef;
+  color: #fff;
+  padding: 2px 3px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.marce {
+  color: black;
+  transition: 0.3;
+}
+
+.marce:hover {
+  background-color: #5583ec;
+  color: #fff;
+  padding: 2px 3px;
+  transition: 0.3s;
+  border-radius: 5px;
+}
