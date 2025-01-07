@@ -6,7 +6,7 @@ Los Integrantes son:
 
 ### Team Salud y Bienestar:
 
--   [ ] **Integrante 1**: Lisbet Costilla
+-   [ ] **Lider de equipo 1**: Lisbet Costilla
 -   [ ] **Integrante 2**: Facundo Alvarado
 -   [ ] **Integrante 6**: Marcelo Carreño
 
