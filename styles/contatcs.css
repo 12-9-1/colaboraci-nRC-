@@ -1,21 +1,13 @@
 * {
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
 }
 
 body {
   position: relative;
-  widows: 100%;
-  height: 100vh;
+  width: 100%;
   background-image: url(../images/pro-pierna/v-m1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
   background-color: black;
 }
 
@@ -25,41 +17,121 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5);
 }
+
+
+.header-container {
+  background-color: #ffffff; /* Blanco */
+  z-index: 2; /* Asegurar que está por encima de otros elementos */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Añadir sombra sutil */
+}
+
+.form-container {
+  background: rgba(148, 142, 142, 0.8); /* Fondo semi-transparente */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.banner .capa {
+  background-color: rgba(0, 0, 0, 0.5); /* Oscurecer */
+}
+
+/* Resto de los estilos iguales */
+
 
 .container {
-  margin-top: 150px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.inputs {
-  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+  max-width: 90%; /* Usar un porcentaje para hacerlo flexible */
+  background: rgba(148, 142, 142, 0.8); /* Fondo semi-transparente */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  margin: 20px auto; /* Centrar y añadir margen superior */
 }
 
 img {
-  height: 160px;
-  width: auto;
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px;
+  height: 60px;
+  margin-bottom: 15px;
 }
 
 h1 {
-  margin-top: 10px;
-  font-size: 40px;
-  border-bottom: 1px solid black;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 form {
-  background-color: #fff;
-  padding: 15px 25px;
+  width: 100%;
 }
 
 .form-group {
   margin-bottom: 10px;
 }
 
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 8px;
+  font-size: 14px;
+}
+
+select,
+textarea {
+  border-radius: 8px;
+}
+
+textarea {
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .form-control {
+    padding: 6px; /* Reduce el padding en dispositivos pequeños */
+    font-size: 13px;
+  }
+
+  .btn-primary {
+    padding: 6px 14px; /* Botón más pequeño */
+    font-size: 13px;
+  }
+
+  img {
+    height: 50px; /* Logo más pequeño */
+  }
+}
+
+/* Media queries para pantallas muy pequeñas (teléfonos) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .form-group {
+    margin-bottom: 8px; /* Reduce el margen entre campos */
+  }
+
+  .container {
+    padding: 15px; /* Reduce el padding del contenedor */
+  }
+}
